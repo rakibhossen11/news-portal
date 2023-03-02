@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <header class="mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+                <a class="btn bg-blue-600 px-6 py-3">News</a>
+                <a class="text-2xl mx-2" href="">Portal</a>
+            </div>
+            <div class="flex-none">
+                <p class="mx-3 text-xl">News</p>
+                <p class="text-xl">Blog</p>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <ul id="category-container" class="text-xl flex gap-5 justify-around mt-6">
+                <!-- <li>Breaking News</li>
+                <li>Regular News</li>
+                <li>International News</li>
+                <li>Sports</li>
+                <li>Entertainment</li>
+                <li>Culture</li>
+                <li>Arts</li>
+                <li>All News</li> -->
+            </ul>
+            <div class="alert shadow-lg mx-3 my-4">
+                <div><span id="news-count">0</span> items found for category <span id="category_name"></span></div>
+            </div>
+        </section>
+        <section class="flex justify-between mx-3">
+            <div class="flex items-center mx-3 gap-4">
+                <h1>Sort by:</h1>
+                <div>
+                    <select class="select select-bordered w-full max-w-xs">
+                        <option disabled selected>Defalut</option>
+                        <option>One</option>
+                        <option>Two</option>
+                        <option>Three</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button class="btn bg-blue-600 px-5 py-3">Todays Pick</button>
+                <button class="btn btn-outline">Trending</button>
+            </div>
+        </section>
+        <!-- show all news -->
+        <section id="all-news" class="mt-10">
+            <!-- <div class="card lg:card-side bg-base-100 shadow-xl mt-5">
+                <figure><img src="https://picsum.photos/200" alt="Album"/></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Biden Pledges Nearly $3 Billion To Ukraine In Largest U.S. Military Aid Package Yet</h2>
+                  <p>Wednesday, August 24, 2022 | Tag Cloud Tags: Biden, EU, Euro, Europe, Joe Biden, Military, News, Russia, Security, UK, Ukraine, United States, Worthy News (Worthy News)  U.S. President Joe Biden has ...</p>
+                    <div class="flex gap-7 items-center justify-between">
+                          <div class="flex gap-7 items-center">
+                            <div class="avatar">
+                                <div class="w-24 rounded-full">
+                                  <img src="https://picsum.photos/200" />
+                                </div>
+                              </div>
+                              <div>
+                                <p>Jimmy Dane</p>
+                                <p><span>2022-08-24</span> <span>17:27:34</span></p>
+                              </div>
+                          </div>
+                          <a href="#my-modal-2" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+        <!-- modal -->
+        <!-- The button to open modal -->
+        <!-- <a href="#my-modal-2" class="btn">open modal</a> -->
+        <!-- Put this part before -->
+        <div class="modal" id="my-modal">
+            <div class="modal-box">
+                <img class="w-full h-25" src="https://i.ibb.co/M23fhxm/unsplash-Eh-Tc-C9s-YXsw.png" alt="">
+                <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
+                <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for
+                    free!</p>
+                <div class="modal-action">
+                    <a href="#" class="btn">Yay!</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- daisy ui -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts/news.js"></script>
+</body>
+
+</html>
